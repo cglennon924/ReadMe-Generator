@@ -73,15 +73,29 @@ const prompt= [
 inquirer.prompt(prompt) 
     .then((repsonse) =>{
         console.log(response);
+        let practice=""
+        let requirements=""
+        let stlye=""
 
+    if(response.node==="yes" && response.requirements==="yes"){
+        requirements = `* In your terminal please install package.JSON by entering 'npm init' and completing the prompts in your terminal.`;
+        practice = `* Then install Inquirer, Axios and/or other using '${response.install}`;
+        stlye = `* Type node.js to run the file`;
+        } else {
+        alert("Please start over")
+        }  
 
-
-
-
+//Call to retrieve Github info
         axios.get(`https://api.github.com/uers/${response.name}`)
         .then(api => {
             console.log(api.data)
-
+        // Github Username
+        const username = data.data.login
+        // Github ProfilePic URL
+        const profilePic = data.data.avatar_url
+        //Github Email Address
+        const email = data.data.email
+            
             let createReadMe = 
 `# Build ReadMe Here 
  ## Username: ${response.name}
