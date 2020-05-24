@@ -33,26 +33,26 @@ const prompt= [
 
 {
     
-        type: "list",
-        name: "license",
-        message: "What licenses are you using?",
-        choices: ["MIT","GPL 3.0", "BSD 3", "None"],
+    type: "list",
+    name: "license",
+    message: "What licenses are you using?",
+    choices: ["MIT","GPL 3.0", "BSD 3", "None"],
 },
     
 {
-        type: "list",
-        name: "node",
-        message: "Does this project require node.js to install?",
-        choices: ["Yes", "No"],
-        default: "Yes"
+    type: "list",
+    name: "node",
+    message: "Does this project require node.js to install?",
+    choices: ["Yes", "No"],
+    default: "Yes"
 },
    
 {
-        type: "list",
-        name: "install",
-        choices: ["npm", "yarn"],
-        message: "If 'Yes', How would someone install your application?",
-        default: "npm"
+    type: "list",
+    name: "install",
+    choices: ["npm", "yarn"],
+    message: "If 'Yes', How would someone install your application?",
+    default: "npm"
 },
 
 {   type: "input", 
