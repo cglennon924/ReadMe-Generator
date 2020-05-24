@@ -82,7 +82,7 @@ inquirer.prompt(prompt)
         practice = `* Then install Inquirer, Axios and/or other using '${response.install}`;
         stlye = `* Type node.js to run the file`;
         } else {
-        alert("Please start over")
+        console.log("Please start over")
         }  
 
 //Call to retrieve Github info
