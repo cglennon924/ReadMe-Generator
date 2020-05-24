@@ -71,7 +71,7 @@ const prompt= [
 
 //Function 1: Inquirer
 inquirer.prompt(prompt) 
-    .then((repsonse) =>{
+    .then((response) =>{
         console.log(response);
         let practice=""
         let requirements=""
