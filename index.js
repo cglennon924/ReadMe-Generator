@@ -3,7 +3,7 @@ const fs = require("fs");
 const axios= require("axios");
 
 const inquirer= require("inquirer");
-
+//Array of questions for ReadMe//
 const prompt= [
 {
     type:"input",
@@ -69,7 +69,7 @@ const prompt= [
 }]
 
 
-//Function 1: Inquirer
+//Function 1: Inquirer which places responses from array of questions//
 inquirer.prompt(prompt) 
     .then((response) =>{
         console.log(response);
@@ -82,7 +82,9 @@ inquirer.prompt(prompt)
         practice = `* Then install Inquirer, Axios and/or other using '${response.install}`;
         stlye = `* Type node.js to run the file`;
         } else {
-        console.log("Please start over")
+        practice=`No answer yet`
+        requirements=`No answer yet`
+        stlye=`No answer yet`
         }  
 
 //Call to retrieve Github info
@@ -97,7 +99,7 @@ inquirer.prompt(prompt)
         const email = api.data.email
             
             
-        
+     //ReadMe responses//   
         let createReadMe = 
 `# Build ReadMe Here 
  ## Username: ${response.name}
@@ -116,7 +118,7 @@ inquirer.prompt(prompt)
 ### What is my email address?
 ${email}`           
 
-
+//Create new ReadMe//
             fs.writeFile("newReadMe.md", createReadMe, function(err){
                 if (err) {
                     return err
