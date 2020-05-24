@@ -114,7 +114,7 @@ inquirer.prompt(prompt)
 ## Profile Pic
 ![profile image](${profilePic})
 ### What is my email address?
-${email}`            
+${email}`           
 
 
             fs.writeFile("newReadMe.md", createReadMe, function(err){
