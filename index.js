@@ -90,11 +90,11 @@ inquirer.prompt(prompt)
         .then(api => {
             console.log(api.data)
         // Github Username
-        const username = data.data.login
+        const username = api.data.login
         // Github ProfilePic URL
-        const profilePic = data.data.avatar_url
+        const profilePic = api.data.avatar_url
         //Github Email Address
-        const email = data.data.email
+        const email = api.data.email
             
             
         
