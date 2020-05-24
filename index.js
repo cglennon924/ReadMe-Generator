@@ -88,7 +88,7 @@ inquirer.prompt(prompt)
         }  
 
 //Call to retrieve Github info
-        axios.get(`https://api.github.com/uers/${response.name}`)
+        axios.get(`https://api.github.com/users/${response.name}`)
         .then(api => {
             console.log(api.data)
         // Github Username
