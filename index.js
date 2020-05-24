@@ -96,12 +96,26 @@ inquirer.prompt(prompt)
         //Github Email Address
         const email = data.data.email
             
-            let createReadMe = 
+            
+        
+        let createReadMe = 
 `# Build ReadMe Here 
  ## Username: ${response.name}
-            
-            
-`
+ ## title: ${response.title}
+ ## reason: ${response.reason}
+ ## lesson: ${response.lesson}
+ ## license: ${response.license}
+ ## node: ${response.node}
+ ## install: ${response.install}
+ ## factors: ${response.factors}
+ ## requirements: ${response.requirements}
+ ## License
+![license image](https://img.shields.io/badge/License-${response.license}-brightgreen)
+## Profile Pic
+![profile image](${profilePic})
+### What is my email address?
+${email}`            
+
 
             fs.writeFile("newReadMe.md", createReadMe, function(err){
                 if (err) {
