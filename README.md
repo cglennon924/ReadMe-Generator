@@ -2,14 +2,12 @@
 
 https://cglennon924.github.io/ReadMe-Generator/
 
-
+## User Story
+```
 AS A developer
-
 I WANT a README generator
-
 SO THAT I can easily put together a good README for a new project
 ```
-
 
 ## Business Context
 
@@ -36,23 +34,5 @@ When creating an open source project on GitHub, it is important to have a qualit
 
 * The generated README includes 1 badge that's specific to the repository.
 
-```
-GIVEN the developer has a GitHub profile and a repository
-
-WHEN prompted for the developer's GitHub username and repo specific information
-
-THEN a README for the repo is generated
-```
-- - -
-
-## Submission Requirements
-
-Because this is a CLI App, there will be no need to deploy it to Heroku. This time, though, you need to include screenshots, a gif, and/or a video showing us that you got the app working with no bugs. You can include these screenshots or a link to a video in a `README.md` file.
-
-* Create a `.gitignore` file and include `node_modules/` and `.DS_Store/`.
-
-* `node_modules` is not tracked and uploaded to GitHub. (Hint: It is easy if you create your `.gitignore` file before installing dependencies with npm.)
-
-* Repo **MUST** include `package.json` with required dependencies. (Hint: Run `npm init` when you first setup the project before installing any dependencies.)
 
 
